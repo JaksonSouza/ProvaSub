@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:id="@+id/paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="10dp"
+            android:text="Nome Paciente"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotoPacienteAgendado"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/paciente"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/nomePacienteAgendado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/paciente"
+            android:layout_toEndOf="@id/fotoPacienteAgendado"
+            android:layout_toRightOf="@id/fotoPacienteAgendado"
+            android:text="Nome Paciente"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/codigoPacienteAgendado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomePacienteAgendado"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/textPacienteAgendado"
+            android:layout_toRightOf="@id/fotoPacienteAgendado"
+            android:textColor="#a9a9a9"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textPacienteAgendado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomePacienteAgendado"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/fotoPacienteAgendado"
+            android:layout_toRightOf="@id/fotoPacienteAgendado"
+            android:text="Código:"
+            android:textColor="#a9a9a9"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/medico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="10dp"
+            android:text="Nome Médico"
+            android:layout_below="@id/fotoPacienteAgendado"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotoMedicoAgendado"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/medico"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/nomeMedicoAgendado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/medico"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/fotoMedicoAgendado"
+            android:layout_toRightOf="@id/fotoMedicoAgendado"
+            android:text="Nome Médico"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/codigoMedicoAgendado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomeMedicoAgendado"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/textMedicoAgendado"
+            android:layout_toRightOf="@id/textMedicoAgendado"
+            android:textColor="#a9a9a9"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textMedicoAgendado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomeMedicoAgendado"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/fotoMedicoAgendado"
+            android:layout_toRightOf="@id/fotoMedicoAgendado"
+            android:text="Código:"
+            android:textColor="#a9a9a9"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dataAgenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fotoMedicoAgendado"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/fotoMedicoAgendado"
+            android:layout_toRightOf="@id/fotoMedicoAgendado"
+            android:text="Data"
+            android:textColor="#a9a9a9"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/horaAgenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fotoMedicoAgendado"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/dataAgenda"
+            android:layout_toRightOf="@id/dataAgenda"
+            android:text="Hora"
+            android:textColor="#a9a9a9"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

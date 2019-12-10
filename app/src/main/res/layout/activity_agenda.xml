@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/selectdate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Selecionar Data" />
+
+    <TextView
+        android:id="@+id/set_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/selecttime"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Selecionar Horário" />
+
+    <TextView
+        android:id="@+id/set_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/bSelecionarPaciente"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="bSelecionarPaciente"
+        android:text="Selecionar Paciente" />
+
+    <Button
+        android:id="@+id/bSelecionarMedico"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="bSelecionarMedico"
+        android:text="Selecionar Médico" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paciente"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotoPaciente"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/nomePaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/fotoPaciente"
+            android:layout_toRightOf="@id/fotoPaciente"
+            android:text="Nome Paciente"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/codigoPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomePaciente"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/textPaciente"
+            android:layout_toRightOf="@id/textPaciente"
+            android:textColor="#a9a9a9"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textPaciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomePaciente"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/fotoPaciente"
+            android:layout_toRightOf="@id/fotoPaciente"
+            android:text="Código:"
+            android:textColor="#a9a9a9"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Médico"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotoMedico"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/nomeMedico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/fotoMedico"
+            android:layout_toRightOf="@id/fotoMedico"
+            android:text="Nome Médico"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/codigoMedico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomeMedico"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/text"
+            android:layout_toRightOf="@id/text"
+            android:textColor="#a9a9a9"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomeMedico"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/fotoMedico"
+            android:layout_toRightOf="@id/fotoMedico"
+            android:text="Código:"
+            android:textColor="#a9a9a9"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bCadastrar"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fotoMedico"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:onClick="bCadastrar"
+            android:text="Cadastrar" />
+
+        <Button
+            android:id="@+id/bCancelar"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fotoMedico"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/bCadastrar"
+            android:layout_toRightOf="@id/bCadastrar"
+            android:onClick="bCancelar"
+            android:text="Cancelar" />
+    </RelativeLayout>
+</LinearLayout>
